@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat - Groq</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="chat-header">
+            <h1>💬 AI Chat Assistant</h1>
+            <p>Powered by Groq LLaMA 3.3</p>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message ai-message">
+                <div class="message-content">
+                    Halo! Saya asisten AI. Silakan kirim pesan atau upload gambar.
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <div class="input-wrapper">
+                <textarea 
+                    id="messageInput" 
+                    placeholder="Ketik pesan Anda di sini..." 
+                    rows="2"
+                ></textarea>
+                <div class="input-actions">
+                    <label for="imageUpload" class="upload-btn">📎</label>
+                    <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                    <button id="sendBtn" class="send-btn">Kirim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
