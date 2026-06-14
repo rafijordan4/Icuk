@@ -1,0 +1,16 @@
+{
+  "name": "ai-chat-vercel",
+  "version": "1.0.0",
+  "description": "AI Chat dengan Groq API - Deployed on Vercel",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "dependencies": {
+    "groq-sdk": "^0.3.2"
+  },
+  "devDependencies": {
+    "vercel": "^33.4.0"
+  }
+}
